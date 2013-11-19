@@ -51,8 +51,13 @@ describe("discoDancer", function() {
     expect(discoDancer).to.be.an.instanceof(DiscoDancer);
   });
 
-  xit("should have a jQuery $node object", function(){
+  it("should have a jQuery $node object", function(){
     expect(discoDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+  it("should have a step and an oldStep function", function(){
+    expect('step' in discoDancer).to.be.true;
+    expect('oldStep' in discoDancer).to.be.true;
   });
 
   xit("should have a step function that makes its node blink", function() {
