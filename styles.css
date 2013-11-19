@@ -25,3 +25,13 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.disco{
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+.pokemon{
+  border:10px dashed yellow;
+  border-radius:10px;
+  position:absolute;
+}
