@@ -1,7 +1,7 @@
 // Creates and returns a new dancer object that can step
-var Dancer = function(top, left, timeBetweenSteps){
+var Dancer = function(top, left, timeBetweenSteps, addClass){
   this.timeBetweenSteps = timeBetweenSteps;
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<span class="dancer '+ addClass +'"></span>');
 
   this.step();
   this.setPosition(top, left);
