@@ -9,5 +9,9 @@ DiscoDancer.prototype.constructer = DiscoDancer;
 
 DiscoDancer.prototype.step = function(){
   this.oldStep();
-  // this.$node.toggle();
+  this.$node.animate({
+    opacity: 0.25,
+    left: "+=50"
+  });
+  this.$node.toggle();
 };
